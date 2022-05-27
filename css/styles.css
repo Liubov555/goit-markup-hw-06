@@ -266,10 +266,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 581px;
+    padding: 40px;
 
     background-color: #FFFFFF;
-    width: 528px;
-    height: 581px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
@@ -290,7 +290,55 @@ img {
     border-radius: 50%;
 }
 
-/*Переваги*/
+/*Modal form*/
+.form-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.form-group,
+.form-policy-group {
+    display: block;
+}
+
+. .form-field {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px;
+}
+
+.form-policy-description {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.form-policy-link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: underline;
+
+}
+
+/*Benefits*/
 .section-title {
 
     font-weight: 700;
