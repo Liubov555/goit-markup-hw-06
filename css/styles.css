@@ -290,38 +290,145 @@ img {
     border-radius: 50%;
 }
 
+.modal-btn:hover,
+.modal-btn:focus+.modal-btn-icon {
+    fill: #2196f3;
+}
+
 /*Modal form*/
+.form-modal {
+    width: 448px;
+}
+
 .form-title {
-    margin-bottom: 12px;
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
 
     color: #212121;
 }
 
-.form-group,
-.form-policy-group {
-    display: block;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-. .form-field {
-    display: block;
+.form-label {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 4px;
 
     color: #757575;
 }
 
 .form-input {
     width: 100%;
-    padding: 14px;
+    height: 40px;
+    padding: 11px 0px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus,
+.comment:hover,
+.comment:focus {
+    cursor: pointer;
+    border-color: #2196f3;
+    outline: 0;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+}
+
+.form-input:hover,
+.form-input:focus+.form-icon {
+    fill: #2196f3;
+}
+
+.form-comment {
+    margin-bottom: 20px;
+}
+
+.comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment::placeholder {
+    opacity: 1;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+}
+
+.comment :not(:placeholder-shown) {
+    opacity: 0;
+}
+
+.form-policy-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.costom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid;
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.checkbox-icon {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.costom-checkbox {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.checkbox:checked+.costom-checkbox .checkbox-icon {
+    opacity: 1;
+    fill: #FFFFFF;
 }
 
 .form-policy-description {
+    margin-right: 2px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -335,7 +442,6 @@ img {
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: underline;
-
 }
 
 /*Benefits*/
@@ -626,6 +732,10 @@ img {
     margin-right: 70px;
 }
 
+.footer-right {
+    margin-right: 93px;
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -679,6 +789,54 @@ img {
 
 .social-icons-footer {
     fill: #FFFFFF
+}
+
+.footer-signature-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-input {
+    background-color: inherit;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2196F3;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer-btn-text {
+    padding: 10px 10px 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.footer-btn-icon {
+    fill: #FFFFFF;
 }
 
 /*Основна сторінка Портфоліо*/
